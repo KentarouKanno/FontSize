@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     
     func update(timer: NSTimer) {
-        if let targetHeight = timer.userInfo!["targetHeight"] as? CGFloat, let value = timer.userInfo!["value"] as? CGFloat {
+        if let targetHeight = timer.userInfo?["targetHeight"] as? CGFloat, let value = timer.userInfo?["value"] as? CGFloat {
             if targetHeight == heightMin {
                 if baseViewHeightConstraint.constant > targetHeight {
                     baseViewHeightConstraint.constant -= value
