@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="f6d-Bz-uzh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FontSize-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FontSize" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-cu-i0x">
+                                <rect key="frame" x="20" y="98" width="280" height="270"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="qOb-uu-iKZ">
+                                        <rect key="frame" x="10" y="10" width="260" height="250"/>
+                                        <string key="text">Swift（スウィフト）は、アップルのiOSおよびOS Xのためのプログラミング言語。Worldwide Developers Conference (WWDC) 2014で発表された。アップル製OS上で動作するアプリケーションの開発に従来から用いられていたObjective-CやObjective-C++、C言語と共存することが意図されている[3]。
+                                            Swiftは、マルチパラダイムのコンパイラプログラミング言語であるが、XcodeのPlaygroundsの上やターミナルでインタラクティブにデバッグする事が可能である。
+                                            LLVMコンパイラが使われており、ライブコーディングに対応していることが特徴[4]。
+                                            並列スクリプト言語のSwift (並列スクリプト言語)（英語: Swift (parallel scripting language)）とは名称を同じくするが、別言語。</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97688634529999996" green="1" blue="0.53062450800000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="3Sb-Do-dUY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qOb-uu-iKZ" secondAttribute="trailing" constant="10" id="BuG-G2-DL8"/>
+                                    <constraint firstItem="qOb-uu-iKZ" firstAttribute="top" secondItem="wUR-cu-i0x" secondAttribute="top" constant="10" id="FpP-hk-hii"/>
+                                    <constraint firstAttribute="bottom" secondItem="qOb-uu-iKZ" secondAttribute="bottom" constant="10" id="bIL-UU-Pv9"/>
+                                    <constraint firstItem="qOb-uu-iKZ" firstAttribute="leading" secondItem="wUR-cu-i0x" secondAttribute="leading" constant="10" id="sfE-tj-AG9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ4-CV-aBm">
+                                <rect key="frame" x="93" y="497" width="134" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="Yoj-7g-ssZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="jh6-nF-p8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Timer Animation"/>
+                                <connections>
+                                    <action selector="pusuTimerSmall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SXD-Qk-JSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-Zq-gfS">
+                                <rect key="frame" x="98" y="396" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="7Ca-Eg-XNG"/>
+                                    <constraint firstAttribute="height" constant="30" id="fGp-Cy-lA2"/>
+                                </constraints>
+                                <state key="normal" title="UIView.Animation "/>
+                                <connections>
+                                    <action selector="pushAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0x-8p-2A2"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="270" minValue="50" maxValue="270" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-3F-dht">
+                                <rect key="frame" x="18" y="446" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Ip-0g-4YW"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vt5-mA-NAo"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XQ4-CV-aBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Hk-UG-55Y"/>
+                            <constraint firstItem="wUR-cu-i0x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9iG-sw-IfA"/>
+                            <constraint firstItem="oZb-Zq-gfS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="127" id="Cdh-ur-aRu"/>
+                            <constraint firstItem="wUR-cu-i0x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="OMv-Wn-Tfi"/>
+                            <constraint firstItem="ec5-3F-dht" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="PdH-cW-Jpb"/>
+                            <constraint firstAttribute="trailing" secondItem="ec5-3F-dht" secondAttribute="trailing" constant="20" id="Xtd-FW-pwX"/>
+                            <constraint firstItem="ec5-3F-dht" firstAttribute="top" secondItem="oZb-Zq-gfS" secondAttribute="bottom" constant="20" id="dju-J1-KOc"/>
+                            <constraint firstAttribute="trailing" secondItem="wUR-cu-i0x" secondAttribute="trailing" constant="20" id="efc-QA-4aM"/>
+                            <constraint firstItem="oZb-Zq-gfS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pny-ck-E2M"/>
+                            <constraint firstItem="XQ4-CV-aBm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="228" id="w8E-vI-Jy3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FontSize" id="3Fc-uD-fSc"/>
+                    <connections>
+                        <outlet property="baseViewHeightConstraint" destination="3Sb-Do-dUY" id="Fm2-HS-jdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="11N-Xv-bE3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f6d-Bz-uzh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rac-bK-ZeT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VBH-lL-lGP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4Z-mm-HDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="406"/>
+        </scene>
+    </scenes>
+</document>
